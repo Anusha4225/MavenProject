@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pages.LoginPage;
@@ -32,8 +33,9 @@ public class LoginTest extends BaseClass{
 		test = report.startTest("Positive Login Test");
 		LoginPage login = new LoginPage();
       login.Login(UserNameVal,PasswordVal);
+      
       report.endTest(test);
-
+      Assert.assertTrue(false);
      }
 	
 	@Test

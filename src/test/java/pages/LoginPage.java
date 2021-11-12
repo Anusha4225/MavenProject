@@ -69,7 +69,7 @@ public class LoginPage {
 		public void ErrorCheck() {
 		
 	       String ActualMsg =Error.getText();
-	       String ExpMsg ="The email or password you have entered is invalid.";
+	       String ExpMsg ="The email or password you have entered is invalid";
 	       //Assert.assertEquals(ActualMsg,ExpMsg);
 	       SoftAssert soft=new SoftAssert();
 	       soft.assertEquals(ActualMsg,ExpMsg);
